@@ -5,6 +5,12 @@ from fastapi.responses import HTMLResponse
 import pandas as pd
 import plotly.graph_objects as go
 from fastapi.staticfiles import StaticFiles
+import os
+import uvicorn
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # 환경 변수 PORT를 가져오고, 기본값은 8000
+    uvicorn.run("messi_goal_fcb:app", host="0.0.0.0", port=port)
 
 
 app = FastAPI()
@@ -14,7 +20,7 @@ templates = Jinja2Templates(directory="templates")
 # CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 모든 도메인 허용
+    allow_origins=["https://ankara-messi.onrender.com"],  # 모든 도메인 허용
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
