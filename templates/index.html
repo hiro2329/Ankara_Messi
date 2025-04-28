@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messi's Barcelona Goals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Spoqa Han Sans", sans-serif;
+        font-weight: 400;
+      }
+      header {
+        background: linear-gradient(#004d98, #a50044);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header class="text-white h-screen flex items-center justify-center">
+      <div class="container mx-auto text-center">
+        <h1 class="text-9xl font-bold">Lionel Messi</h1>
+        <p class="text-4xl mt-2">A Journey Through His Barcelona Goals</p>
+      </div>
+    </header>
+    <!-- color bar -->
+    <div class="h-12 bg-gradient-to-b from-[#a50044] to-black"></div>
+
+    <!-- Hero1 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8"
+      >
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">바르셀로나의 전설</h2>
+          <p class="text-xl leading-relaxed">
+            리오넬 메시의 FC 바르셀로나 시절은 전설 그 자체였습니다.<br />
+            기록을 깨고 잊을 수 없는 골들을 넣으며 그의 여정은 수백만 명에게
+            영감을 주었습니다.<br />
+            그래프를 통해 메시가 어떻게 축구 역사상 가장 위대한 선수 중 한 명이
+            되었는지 <br />확인해보세요.
+          </p>
+        </div>
+
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative">
+          <img
+            src="static/제목.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[150%] h-auto"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Hero2 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full"
+      >
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">메시의 득점 여정</h2>
+          <p class="text-xl leading-relaxed">
+            메시의 바르셀로나 시절은 시즌마다 새로운 기록을 세운
+            여정이었습니다.<br />
+            시즌별 득점 그래프를 통해 그의 성장과 전성기를 확인할 수 있습니다.
+          </p>
+          {{ season_html | safe }}
+        </div>
+
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/Debut.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero3 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full"
+      >
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/messi2.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+          />
+        </div>
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">연도별 득점 분석</h2>
+          <p class="text-xl leading-relaxed">
+            시즌별 득점에서 더 세부적으로 들어가, 연도별 득점 그래프를 통해
+            메시가 특정 연도에 <br />얼마나 꾸준히 활약했는지 살펴봅니다.
+          </p>
+          {{ year_html | safe }}
+        </div>
+      </div>
+    </section>
+    <!-- Hero4 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full"
+      >
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">월별 득점 패턴</h2>
+          <p class="text-xl leading-relaxed">
+            메시의 득점은 특정 월에 집중되었을까요? <br />월별 득점 그래프를
+            통해 그의 득점 패턴을 확인합니다.
+          </p>
+          {{ month_html | safe }}
+        </div>
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/messi3.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Hero5 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full"
+      >
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/messi4.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+          />
+        </div>
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">홈과 원정에서의 활약</h2>
+          <p class="text-xl leading-relaxed">
+            메시의 득점은 홈 경기와 원정 경기에서 어떻게 나뉘었을까요?
+            <br />홈과 원정 득점 비율을 통해 그의 경기력을 비교합니다.
+          </p>
+          {{ home_away_html | safe }}
+        </div>
+      </div>
+    </section>
+    <!-- Hero6 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-offset="300"
+      >
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/messi5.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+          />
+        </div>
+        <!-- 텍스트 섹션 -->
+        <div class="md:w-1/2 text-center md:text-left space-y-6">
+          <h2 class="text-6xl font-bold">득점 유형 분석</h2>
+          <p class="text-xl leading-relaxed">
+            메시의 득점은 어떤 방식으로 이루어졌을까요? 프리킥, 헤더, 페널티킥
+            등 다양한 득점 유형을 분석합니다.
+          </p>
+          {{ goalType_html | safe }}
+        </div>
+      </div>
+    </section>
+    <!-- Hero7 Section -->
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full justify-center"
+      >
+        <!-- 텍스트 섹션 -->
+        <div
+          class="text-center md:text-center space-y-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="300"
+        >
+          <h2 class="text-6xl font-bold">메시의 조력자</h2>
+          <p class="text-xl leading-relaxed">
+            메시의 득점은 혼자만의 힘으로 이루어진 것이 아닙니다. 그의 득점에
+            가장 많은 도움을 준 동료들을 확인합니다.
+          </p>
+          {{ assist_html | safe }}
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-16 bg-black h-screen text-white flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 h-full justify-center"
+      >
+        <!-- 이미지 섹션 -->
+        <div class="md:w-1/2 flex justify-center relative h-full">
+          <img
+            src="static/MSN.png"
+            alt="Lionel Messi"
+            class="rounded-lg shadow-lg max-w-none w-[100%] h-[100%] object-contain"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-offset="300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Messi Goal Analysis. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
