@@ -27,7 +27,10 @@ app.add_middleware(
 )
 
 # CSV 데이터 읽기
-df = pd.read_csv('Messi - All Goals for Barcelona.csv')
+# df = pd.read_csv('Messi - All Goals for Barcelona.csv')
+csv_path = os.path.join(os.path.dirname(__file__),
+                        "Messi - All Goals for Barcelona.csv")
+df = pd.read_csv(csv_path)
 
 
 # 템플릿 렌더링 엔드포인트
