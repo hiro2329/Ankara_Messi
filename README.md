@@ -1,4 +1,4 @@
-# Ankara Messi - FC Barcelona Goals Analysis
+# ⚽ Ankara Messi - FC Barcelona Goals Analysis🏟️
 
 리오넬 메시의 FC 바르셀로나 시절 득점 데이터를 분석하고 시각화하는 FastAPI 기반 웹 애플리케이션입니다. 이 프로젝트는 메시의 득점 패턴, 득점 유형, 홈/원정 비율, 어시스트 분석 등을 시각적으로 보여줍니다.
 
