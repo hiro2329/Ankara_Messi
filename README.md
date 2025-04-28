@@ -4,17 +4,7 @@
 
 ---
 
-### 홈 화면
-
-![Home](images/header.png)
-
-### 도입부
-
-![Messi](images/legend.png)
-
-### 시각화
-
-![Visualization](images/visualization.png)
+![GIF](images/read.gif)
 
 ---
 
